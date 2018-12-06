@@ -1,0 +1,8 @@
+#!/bin/bash
+#cd depends
+#make HOST=x86_64-pc-linux-gnu
+#cd ../
+./autogen.sh
+./configure --disable-tests #--enable-cxx --disable-shared --prefix=`pwd`/depends/x86_64-pc-linux-gnu
+make
+make install
